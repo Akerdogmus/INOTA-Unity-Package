@@ -6,7 +6,7 @@
 
 This package has been developed to make the [INOTA](https://github.com/inomuh/inota) robot model easy to use in any Unity project. It contains the basic codes necessary for [INOTA](https://github.com/inomuh/inota) to work.
 
-![Image of INOTAExampleScene](https://github.com/Akerdogmus/INOTA-Unity-Package/tree/master/Images)
+![Image of INOTAExampleScene](https://github.com/Akerdogmus/INOTA-Unity-Package/blob/master/Images/inotaRobotPackage.PNG)
 
 ## Installation
 For installation this package to your Unity project:
