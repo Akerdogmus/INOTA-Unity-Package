@@ -2,7 +2,7 @@
 
 [![CodeFactor](https://www.codefactor.io/repository/github/akerdogmus/INOTA-Unity-Package/badge)](https://www.codefactor.io/repository/github/akerdogmus/INOTA-Unity-Package)
 
-![current_version](https://img.shields.io/github/v/release/Akerdogmus/INOTA-Unity-Package?color=green) ![last_commit](https://img.shields.io/github/last-commit/Akerdogmus/INOTA-Unity-Package?color=green) ![repo_size](https://img.shields.io/github/repo-size/Akerdogmus/INOTA-Unity-Package) ![Apache-2.0 License](https://img.shields.io/github/license/Akerdogmus/INOTA-Unity-Package?color=blue) ![lang](https://img.shields.io/github/languages/top/Akerdogmus/INOTA-Unity-Package)
+![current_version](https://img.shields.io/github/v/release/Akerdogmus/INOTA-Unity-Package?color=green) ![last_commit](https://img.shields.io/github/last-commit/Akerdogmus/INOTA-Unity-Package?color=green) ![repo_size](https://img.shields.io/github/repo-size/Akerdogmus/INOTA-Unity-Package) ![lang](https://img.shields.io/github/languages/top/Akerdogmus/INOTA-Unity-Package)
 
 This package has been developed to make the [INOTA](https://github.com/inomuh/inota) robot model easy to use in any Unity project. It contains the basic codes necessary for [INOTA](https://github.com/inomuh/inota) to work.
 
