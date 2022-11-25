@@ -30,7 +30,6 @@ public class InotaAutoMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         agent.destination = targets[counter].position;  //agent için varış noktası hedef olarak ayarlanır.
         _targetDistance = Vector3.Distance(transform.position, agent.destination);  //Şu anki konum ve hedef arası uzaklık hesabı yapılır.
         transform.rotation = Quaternion.Slerp(transform.rotation, _lookRotation, Time.deltaTime * RotationSpeed);
@@ -73,7 +72,7 @@ public class InotaAutoMovement : MonoBehaviour
             if (Math.Abs(_lookRotation[3] - transform.rotation[3]) < 0.02 && Math.Abs(_lookRotation[1] - transform.rotation[1]) < 0.02)
             {
                 // _lookRotation ve transform.rotation birbirine eşit olduğunda artık robot tekrar hareket edebilir. 
-                // (Kayma kontrolü bu kod parçası ile yapıldı.)
+                // (Kayma kontrolu bu kod parcası ile yapildi.)
                 agent.speed = robotSpeed;
             }
         }

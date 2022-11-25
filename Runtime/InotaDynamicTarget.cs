@@ -1,7 +1,5 @@
 using UnityEngine;
 using UnityEngine.AI;
-
-
 public class InotaDynamicTarget : MonoBehaviour
 {
     public Vector3 _targetPosition = new Vector3 (0.0f, 0.0f, 0.0f);
@@ -13,7 +11,6 @@ public class InotaDynamicTarget : MonoBehaviour
     private Quaternion _lookRotation;
     private Vector3 _direction;
     public float rotationSpeed = 0.01f;
-    
 
     void Start()
     {
@@ -31,15 +28,14 @@ public class InotaDynamicTarget : MonoBehaviour
             autoMovement.enabled = false;
             _autoMove = false;
             
-            //  Bir targeta giderken yeni bir target olu�turuldu�unda hemen durmas� ve yeni targeta do�ru d�nmesi i�in.
+            //  Bir targeta giderken yeni bir target olusturuldugunda hemen durmasi ve yeni targeta dogru donmesi icin.
             agent.destination = transform.position;
             agent.velocity = Vector3.zero;
             agent.speed = 0;
 
             if (_targetPosition != new Vector3 (0.0f,0.0f,0.0f))
             {
-                
-                //  Navmeshagent'i durduruyoruz ve yeni targetimiz dışarıdan verilen _targetPosition oluyor.
+                //  Agent'i durduruyoruz ve yeni targetimiz dışarıdan verilen _targetPosition oluyor.
                 //  Sonra robotun yüzünü hedefe dönmesi için yön ve dönme açısı belirliyoruz.
                 agent.isStopped = true;
                 agent.destination = _targetPosition;
@@ -47,27 +43,27 @@ public class InotaDynamicTarget : MonoBehaviour
                 _lookRotation = Quaternion.LookRotation(_direction);
             }
         }
-        //  Mevcut konumun hedefe olan uzakl��� �l��l�yor.
+        //  Mevcut konumun hedefe olan uzakligi olculuyor.
         _targetDistance = Vector3.Distance(transform.position, agent.destination);
 
-        //  Belirledi�imiz y�n ve d�nme a��s� ve h�z�na g�re robot d�n�yor.
+        //  Belirledigimiz yon ve donme acisi ve hizina gore robot donuyor.
         transform.rotation = Quaternion.Slerp(transform.rotation, _lookRotation, Time.deltaTime * rotationSpeed);
 
-        //  Robot d�nd�kten sonra navmeshagent'i enable edip robotun hedefe do�ru hareket etmesini sa�l�yoruz.
+        //  Robot dondukten sonra agent'i enable edip robotun hedefe dogru hareket etmesini sagliyoruz.
         agent.isStopped = false;
         agent.speed = robotSpeed;
         
         //  E�er R butonundan bir interupt gelirse AutoMovement scriptine gidecek.
         if (Input.GetKeyDown(KeyCode.R))
         {
-            //  Interpt geldi�i an robotun hemen durmas� i�in navmeshagent'in h�z�n� s�f�rl�yoruz.
+            //  Interpt geldigi an robotun hemen durmasi icin agent'in hizini sifirliyoruz.
             Debug.Log("Auto Movement mode is disabled. Robot moves decided targets before.");
             agent.destination = transform.position;
             agent.velocity = Vector3.zero;
             agent.speed = 0;
             agent.isStopped = true;
             
-            //  AutoMovement scriptinin i�ine gidiyoruz. Bu durumda mouse'tan bir interupt gelmedi�i s�rece buran�n i�inde kalacak.
+            //  AutoMovement scriptinin icine gidiyoruz. Bu durumda mouse'tan bir interupt gelmedigi surece buranin icinde kalacak.
             _autoMove = true;
             autoMovement.enabled = true;
         }

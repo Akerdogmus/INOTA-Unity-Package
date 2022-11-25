@@ -14,7 +14,8 @@ public class InotaColorChanger : MonoBehaviour
     }
     public void ColorChange()
     {
-        if(inotaRobotBodyComponent.Length>0){
+        if(inotaRobotBodyComponent.Length>0)
+        {
             for(int i=0; i<inotaRobotBodyComponent.Length;i++)
             {
                 rend = inotaRobotBodyComponent[i].GetComponent<Renderer>();
