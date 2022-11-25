@@ -8,6 +8,9 @@ This package has been developed to make the [INOTA](https://github.com/inomuh/in
 
 ![Image of INOTAExampleScene](https://github.com/Akerdogmus/INOTA-Unity-Package/blob/master/Images/inotaRobotPackage.PNG)
 
+## Requirements
+- Unity URDF Importer: https://github.com/Unity-Technologies/URDF-Importer.git?path=/com.unity.robotics.urdf-importer#v0.5.2
+
 ## Installation
 For installation this package to your Unity project:
 #### Window -> Package Manager -> Add Package from disk -> Choose package.json file. 
