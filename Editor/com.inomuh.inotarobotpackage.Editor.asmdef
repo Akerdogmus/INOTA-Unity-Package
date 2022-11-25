@@ -1,0 +1,16 @@
+{
+    "name": "com.inomuh.inotarobotpackage.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9301a2d056003d545b675835feddf03e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
