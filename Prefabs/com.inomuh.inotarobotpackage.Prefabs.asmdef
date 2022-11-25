@@ -2,8 +2,8 @@
     "name": "com.inomuh.inotarobotpackage.Prefabs",
     "rootNamespace": "",
     "references": [
-        "GUID:e4f56aeb3c939f34daa24ee65eaa762a",
-        "GUID:7dabce2593200074899b9b5884dcfcb7"
+        "com.inomuh.inotarobotpackage.Meshes",
+        "com.inomuh.inotarobotpackage.Materials"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

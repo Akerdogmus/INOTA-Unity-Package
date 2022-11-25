@@ -2,7 +2,7 @@
     "name": "com.inomuh.inotarobotpackage.Editor",
     "rootNamespace": "",
     "references": [
-        "GUID:9301a2d056003d545b675835feddf03e"
+        "com.inomuh.inotarobotpackage"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
