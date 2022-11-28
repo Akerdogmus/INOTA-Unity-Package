@@ -2,15 +2,15 @@ using UnityEngine;
 using UnityEngine.AI;
 public class InotaDynamicTarget : MonoBehaviour
 {
+    private InotaAutoMovement autoMovement;
     public Vector3 _targetPosition = new Vector3 (0.0f, 0.0f, 0.0f);
     private NavMeshAgent agent;
     public float _targetDistance;
     public bool _autoMove = false;
-    private InotaAutoMovement autoMovement;
-    public float robotSpeed = 3;
     private Quaternion _lookRotation;
     private Vector3 _direction;
-    public float rotationSpeed = 0.01f;
+    private float _rotationSpeed;
+    private float _robotSpeed;
 
     void Start()
     {
@@ -21,13 +21,16 @@ public class InotaDynamicTarget : MonoBehaviour
 
     void Update()
     {
+        // Hiz bilgileri AutoMovement scriptinden cekilir.
+        _robotSpeed = autoMovement.robotSpeed;
+        _rotationSpeed = autoMovement.RotationSpeed;
+
         if (Input.GetKeyDown(KeyCode.A))
         {
             Debug.Log("Auto Movement mode is active. Target: "+_targetPosition.x+", "+_targetPosition.y+", "+_targetPosition.z+")");
             //  A'ya basıldığı için AutoMovement scriptini disable ediyoruz.
             autoMovement.enabled = false;
             _autoMove = false;
-            
             //  Bir targeta giderken yeni bir target olusturuldugunda hemen durmasi ve yeni targeta dogru donmesi icin.
             agent.destination = transform.position;
             agent.velocity = Vector3.zero;
@@ -47,11 +50,11 @@ public class InotaDynamicTarget : MonoBehaviour
         _targetDistance = Vector3.Distance(transform.position, agent.destination);
 
         //  Belirledigimiz yon ve donme acisi ve hizina gore robot donuyor.
-        transform.rotation = Quaternion.Slerp(transform.rotation, _lookRotation, Time.deltaTime * rotationSpeed);
+        transform.rotation = Quaternion.Slerp(transform.rotation, _lookRotation, Time.deltaTime * _rotationSpeed);
 
         //  Robot dondukten sonra agent'i enable edip robotun hedefe dogru hareket etmesini sagliyoruz.
         agent.isStopped = false;
-        agent.speed = robotSpeed;
+        agent.speed = _robotSpeed;
         
         //  E�er R butonundan bir interupt gelirse AutoMovement scriptine gidecek.
         if (Input.GetKeyDown(KeyCode.R))

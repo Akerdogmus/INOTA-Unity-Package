@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inotaMaterials:
-  - {fileID: 2100000, guid: 6de5d3c0e340f084c91ceca7d41fbc32, type: 2}
+  - {fileID: 2100000, guid: a1b0e5ee92a097f4b9df858477ab90e7, type: 2}
   - {fileID: 2100000, guid: 6e6b38f54712ff0488f64e08565be9b6, type: 2}
   - {fileID: 2100000, guid: 3927ea6650119724fb6f758f23fb983d, type: 2}
   - {fileID: 2100000, guid: 0b9a017da6fd58542bc5ea66fe635f9c, type: 2}
-  - {fileID: 2100000, guid: a1b0e5ee92a097f4b9df858477ab90e7, type: 2}
+  - {fileID: 2100000, guid: 6de5d3c0e340f084c91ceca7d41fbc32, type: 2}

@@ -11003,7 +11003,7 @@ MonoBehaviour:
   - {fileID: 7238614400111230961, guid: 53758dad8a3c2ca4f9dd5a886c21c47c, type: 3}
   isArrived: 0
   _targetDistance: 0
-  robotSpeed: 0.5
+  robotSpeed: 1
   RotationSpeed: 0.01
 --- !u!114 &131577559441328632
 MonoBehaviour:
@@ -11017,11 +11017,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eebdbbdf93aed04c9fe676e6166b74d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetPosition: {x: 0, y: 0, z: 0}
+  _targetPosition: {x: 1, y: 1, z: 1}
   _targetDistance: 0
   _autoMove: 0
-  robotSpeed: 0.5
-  rotationSpeed: 0.01
 --- !u!1 &9067190631366454922
 GameObject:
   m_ObjectHideFlags: 0

@@ -353,6 +353,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: INOTAColorChanger
       objectReference: {fileID: 0}
+    - target: {fileID: 3266095168925601315, guid: a44916ee764dffb42ad0921f194d736c, type: 3}
+      propertyPath: inotaMaterials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a1b0e5ee92a097f4b9df858477ab90e7, type: 2}
+    - target: {fileID: 3266095168925601315, guid: a44916ee764dffb42ad0921f194d736c, type: 3}
+      propertyPath: inotaMaterials.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6de5d3c0e340f084c91ceca7d41fbc32, type: 2}
     - target: {fileID: 3266095168925601316, guid: a44916ee764dffb42ad0921f194d736c, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -406,13 +414,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 131577559441328632, guid: 5747f8898a50470489f15166e44a7f76, type: 3}
+      propertyPath: _targetPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 131577559441328632, guid: 5747f8898a50470489f15166e44a7f76, type: 3}
+      propertyPath: _targetPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 131577559441328632, guid: 5747f8898a50470489f15166e44a7f76, type: 3}
+      propertyPath: _targetPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3466380843004061166, guid: 5747f8898a50470489f15166e44a7f76, type: 3}
+      propertyPath: robotSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9067190631354719800, guid: 5747f8898a50470489f15166e44a7f76, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9067190631354719800, guid: 5747f8898a50470489f15166e44a7f76, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 9067190631354719800, guid: 5747f8898a50470489f15166e44a7f76, type: 3}
       propertyPath: m_LocalPosition.y
@@ -420,7 +444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9067190631354719800, guid: 5747f8898a50470489f15166e44a7f76, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 9067190631354719800, guid: 5747f8898a50470489f15166e44a7f76, type: 3}
       propertyPath: m_LocalRotation.w
