@@ -1,6 +1,6 @@
 {
   "name": "com.inomuh.inotarobotpackage",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "displayName": "INOTA Robot Package",
   "description": "This package has been developed to make the INOTA robot model easy to use in any Unity project. It contains the basic codes necessary for INOTA to work.",
   "unity": "2021.3",
